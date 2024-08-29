@@ -325,8 +325,82 @@ header .logo_header {
   font-weight: 400;
   font-size: 17px;
 }
+.restaurants .cards .card .card_details .heart {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 .restaurants .cards .card .card_details .heart i {
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 24px;
+  transition: opacity 1.7s ease;
+}
+.restaurants .cards .card .card_details .heart .fa-regular {
+  color: black;
+  opacity: 1;
+}
+.restaurants .cards .card .card_details .heart .fa-solid {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.restaurants .cards .card .card_details .heart:hover .fa-regular {
+  opacity: 0;
+}
+.restaurants .cards .card .card_details .heart:hover .fa-solid {
+  opacity: 1;
+}
+
+.loader {
+  font-weight: 400;
+  font-family: Shrikhand;
+  font-size: 50px;
+  display: inline-flex;
+  color: #ff79da;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+
+.loader::before {
+  content: "oh";
+  color: #9356dc;
+  animation: l27 2s infinite;
+}
+
+.loader::after {
+  content: "myfood";
+  animation: l27 2s infinite 1s;
+}
+
+@keyframes l27 {
+  50%, 100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

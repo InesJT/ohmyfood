@@ -1,84 +1,83 @@
 @mixin header_shadow {
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-  }
-  
-  @mixin flexRow {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
-  
-  @mixin flexCol {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-  @mixin footernavstyle {
-    font-family: Roboto;
-    font-size: 16px;
-    color: white;
-    font-weight: 100;
-  }
-  @mixin footerflexcol {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  @mixin title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  @mixin description {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-  }
-  @mixin square {
-    padding: 40px 20px;
-  }
-  @mixin button-style {
-    border-radius: 25px;
-    color: white;
-    font-weight: 400;
-    background: $gradient;
-    box-shadow: 0px 4px 10px rgba(26, 25, 25, 0.25);
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-  }
-  @mixin title_restaurant {
-    font-family: "Shrikhand";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 41px;
-  }
-  @mixin title_dish {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-  }
-  
-  @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  @mixin button-hover {
-    box-shadow: 5px 5px 5px #2a2b2b;
-    background: $light-gradient;
-    transition-duration: 0.9s;
-  }
-  
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@mixin footernavstyle {
+  font-family: Roboto;
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+}
+@mixin footerflexcol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@mixin title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+@mixin description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+@mixin square {
+  padding: 40px 20px;
+}
+@mixin button-style {
+  border-radius: 25px;
+  color: white;
+  font-weight: 400;
+  background: $gradient;
+  box-shadow: 0px 4px 10px rgba(26, 25, 25, 0.25);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+@mixin title_restaurant {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+}
+@mixin title_dish {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-hover {
+  box-shadow: 5px 5px 5px #2a2b2b;
+  background: $light-gradient;
+  transition-duration: 0.9s;
+}

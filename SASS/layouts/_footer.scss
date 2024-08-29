@@ -1,39 +1,41 @@
-footer{
+footer {
   @include flexCol;
   gap: 25px;
   padding: 25px;
   background-color: #353535;
-h4{
-  font-family: Shrikhand;
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-}
-.footer_navs{
-  @include footerflexcol;
-  
- .footer_nav{
-  @include footerflexcol;
+  h4 {
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+  }
+  .footer_navs {
+    @include footerflexcol;
 
-    .footer_icon{
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      
-    
-        i{ color: white}
-        h5{
+    .footer_nav {
+      @include footerflexcol;
+
+      .footer_icon {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        i {
+          color: white;
+        }
+        h5 {
           @include footernavstyle;
         }
       }
-}
- .footer_contact{
-  @include footerflexcol;
+    }
+    .footer_contact {
+      @include footerflexcol;
 
-a{
-h5{@include footernavstyle;
-}}
-}
-
-}
+      a {
+        h5 {
+          @include footernavstyle;
+        }
+      }
+    }
+  }
 }

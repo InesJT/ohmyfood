@@ -1,31 +1,27 @@
-header{
+header {
   display: flex;
   align-items: center;
   flex-direction: row;
-  
-  
+
   height: 70px;
   @include header_shadow;
-  a{
-      width: 70px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .fa-arrow-left {
-          font-size: 18px;
-          color: #353535;
-      }
+  a {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .fa-arrow-left {
+      font-size: 18px;
+      color: #353535;
+    }
   }
-  .logo_header{
-     height: 100%;
-      width: auto;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-  
+  .logo_header {
+    height: 100%;
+    width: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
 }

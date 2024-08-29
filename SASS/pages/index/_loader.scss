@@ -1,0 +1,48 @@
+.loader {
+  font-weight: 400;
+  font-family: Shrikhand;
+  font-size: 50px;
+  display: inline-flex;
+  color: $secondary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+
+.loader::before {
+  content: "oh";
+  color: $primary;
+  animation: l27 2s infinite;
+}
+
+.loader::after {
+  content: "myfood";
+  animation: l27 2s infinite 1s;
+}
+
+@keyframes l27 {
+  50%,
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
