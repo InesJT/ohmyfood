@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Oh my food project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SASS/_index.scss:./CSS/index.css ./SASS/_restaurants.scss:./CSS/restaurants.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InesJT/ohmyfood.git"
+  },
+  "author": "Ines Trabelsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InesJT/ohmyfood/issues"
+  },
+  
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
