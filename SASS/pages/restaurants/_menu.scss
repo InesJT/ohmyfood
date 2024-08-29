@@ -1,0 +1,112 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px;
+    background-color: #F6F6F6;
+    
+  
+    .list_menu {
+      @include flexCol;
+      gap: 40px;
+  
+      .dish {
+        @include flexCol;
+        
+  
+        .dish_title {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h2 {
+           @include title_dish;
+          
+    
+          }
+       
+          .line {
+          width: 40px;
+          height: 3px;     
+          background-color: $tertiary;    
+        }
+      }
+  
+        .card_rest {
+          display: flex;
+          flex-direction: row;
+          background: #FFFFFF;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+          border-radius: 15px;
+          height: 70px;
+          overflow: hidden;
+          &:hover > .checker{
+            margin: 0px;
+          }
+          &:hover .fa-check-circle{
+            transition: all 0.4s 0.4s;
+            transform: rotate(360deg);
+          }
+  
+          .card_rest_description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:5px;
+            padding-left: 10px;
+            height: 100%;
+            width: auto;
+            flex:1;
+            h3{
+              font-family: Roboto;
+              font-size: 18px;
+              font-weight: 700;  
+            }
+          }
+  
+          .card_rest_price {
+            height: 100%;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            h4{
+              padding-bottom: 10px;
+            }
+          }
+          .checker{
+            height: 100%;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            height: 70px;
+            border-radius: 0px 15px 15px 0px;
+            background-color: $tertiary; 
+            margin-right: -70px ;
+            transition-duration: 0.8s;
+            i{
+              font-size: 24px;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .order {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #F6F6F6;
+  
+    .pink_button {
+      @include button-style;
+      text-align: center;
+      &:hover{
+        @include button-hover;
+      }
+    }
+  }

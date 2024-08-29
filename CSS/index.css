@@ -20,7 +20,6 @@ main {
   flex-direction: column;
   gap: 25px;
   gap: 0px;
-  align-items: center;
 }
 
 a {
@@ -56,24 +55,10 @@ footer .footer_navs {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 1024px) {
-  footer .footer_navs {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-  }
-}
 footer .footer_navs .footer_nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-@media screen and (min-width: 1024px) {
-  footer .footer_navs .footer_nav {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
 }
 footer .footer_navs .footer_nav .footer_icon {
   display: flex;
@@ -94,12 +79,6 @@ footer .footer_navs .footer_contact {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 1024px) {
-  footer .footer_navs .footer_contact {
-    display: flex;
-    flex-direction: row;
-  }
-}
 footer .footer_navs .footer_contact a h5 {
   font-family: Roboto;
   font-size: 16px;
@@ -111,7 +90,6 @@ header {
   display: flex;
   align-items: center;
   flex-direction: row;
-  width: 100vw;
   height: 70px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -133,6 +111,222 @@ header .logo_header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main_location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main_location form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.main_location form i {
+  color: #353535;
+}
+.main_location form input {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  width: 150px;
+}
+.main_location .description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 40px 20px;
+}
+.main_location .description .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.main_location .description .main_description_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+.main_location .description .pink_button {
+  border-radius: 25px;
+  color: white;
+  font-weight: 400;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px rgba(26, 25, 25, 0.25);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-align: center;
+}
+.main_location .description .pink_button:hover {
+  box-shadow: 5px 5px 5px #2a2b2b;
+  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+  transition-duration: 0.9s;
+}
+
+.main_fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+}
+.main_fonctionnement .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.main_fonctionnement .fonction_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.main_fonctionnement .fonction_buttons .button_fonction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.main_fonctionnement .fonction_buttons .button_fonction .num_cercle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -12px;
+}
+.main_fonctionnement .fonction_buttons .button_fonction .button {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 240px;
+  height: 70px;
+  background: #f7f7f7;
+  padding: 0px 40px;
+}
+.main_fonctionnement .fonction_buttons .button_fonction .button .icon {
+  color: #9356dc;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_fonctionnement .fonction_buttons .button_fonction .button h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+}
+.restaurants .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.restaurants .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.restaurants .cards .card {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .cards .card .card_img {
+  width: 100%;
+  height: 70%;
+}
+.restaurants .cards .card .card_img .new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #99e2d0;
+  background: #99e2d0;
+  color: #008766;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+}
+.restaurants .cards .card .card_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurants .cards .card .card_details {
+  padding: 0px 15px;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants .cards .card .card_details .card_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.restaurants .cards .card .card_details .card_info h2 {
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 18px;
+}
+.restaurants .cards .card .card_details .card_info p {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 17px;
+}
+.restaurants .cards .card .card_details .heart i {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=index.css.map */

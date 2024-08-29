@@ -1,0 +1,52 @@
+.main_location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+            form {
+              display: flex;
+              flex-direction: row;
+              gap:10px;
+              justify-content: center;
+              align-items: center;
+              height: 50px;
+              background-color: #EAEAEA;
+            @include header_shadow;
+       
+              i {
+                      color: #353535;
+                  } 
+              input {
+                  border: none;
+                  background-color: transparent;
+                  font-weight: bold;
+                  font-size: 18px;
+                  text-align: center;
+                  width: 150px;
+                }
+               
+          }
+      
+       
+        .description{
+            @include flexCol;
+             justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #F6F6F6;
+            @include square;
+          .title {
+            @include title;         
+         }
+          .main_description_text {
+           @include description;
+          }
+          .pink_button {
+                @include button-style;
+                text-align: center;
+                &:hover{
+                  @include button-hover;
+                }
+          }
+
+        }
+    }
