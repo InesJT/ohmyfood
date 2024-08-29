@@ -1,0 +1,57 @@
+footer {
+ 
+    @include flexCol;
+    gap: 25px;
+    padding: 25px;
+    background-color: #353535;
+    h4 {
+      font-family: Shrikhand;
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+    }
+    .footer_navs {
+      @include footerflexcol;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+      }
+  
+      .footer_nav {
+        @include footerflexcol;
+        @media screen and (min-width: 1024px) {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+  
+        .footer_icon {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+  
+          i {
+            color: white;
+          }
+          h5 {
+            @include footernavstyle;
+          }
+        }
+      }
+      .footer_contact {
+        @include footerflexcol;
+        @media screen and (min-width: 1024px) {
+          display: flex;
+          flex-direction: row;
+        }
+  
+        a {
+          h5 {
+            @include footernavstyle;
+          }
+        }
+      }
+    }
+  }
+  

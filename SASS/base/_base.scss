@@ -1,0 +1,36 @@
+* {
+    font-family: "Roboto";
+  }
+  body {
+    margin: 0px;
+    .mainContainer {
+      min-width: 375px;
+      max-width: 1440px;
+      margin: 0 auto;
+      @include flexCol;
+      gap: 0px;
+    }
+  }
+  
+  main {
+    @include flexCol;
+    gap: 0px;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0px;
+  }
+  
+  @media screen and (min-width: 767.99px) {
+  }
+  
