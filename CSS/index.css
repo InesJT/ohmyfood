@@ -21,6 +21,11 @@ main {
   gap: 25px;
   gap: 0px;
 }
+@media (min-width: 1024px) {
+  main {
+    align-items: center;
+  }
+}
 
 a {
   text-decoration: none;
@@ -86,6 +91,28 @@ footer .footer_navs .footer_contact a h5 {
   font-weight: 100;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+  footer .footer_navs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  footer .footer_navs .footer_nav {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer_navs .footer_contact {
+    display: flex;
+    flex-direction: row;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -118,6 +145,11 @@ header .logo_header {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  .main_location {
+    width: 100%;
+  }
+}
 .main_location form {
   display: flex;
   flex-direction: row;
@@ -125,7 +157,7 @@ header .logo_header {
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .main_location form i {
@@ -146,7 +178,7 @@ header .logo_header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 40px 20px;
 }
 .main_location .description .title {
@@ -188,6 +220,11 @@ header .logo_header {
   gap: 30px;
   padding: 40px 20px;
 }
+@media (min-width: 1024px) {
+  .main_fonctionnement {
+    width: 100%;
+  }
+}
 .main_fonctionnement .title {
   font-family: "Roboto";
   font-style: normal;
@@ -195,12 +232,22 @@ header .logo_header {
   font-size: 24px;
   line-height: 28px;
 }
+@media (min-width: 1024px) {
+  .main_fonctionnement .title {
+    padding-left: 180px;
+  }
+}
 .main_fonctionnement .fonction_buttons {
   display: flex;
   flex-direction: column;
   gap: 25px;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  .main_fonctionnement .fonction_buttons {
+    flex-direction: row;
+  }
 }
 .main_fonctionnement .fonction_buttons .button_fonction {
   display: flex;
@@ -251,11 +298,16 @@ header .logo_header {
 }
 
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 40px 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    width: 100%;
+  }
 }
 .restaurants .title {
   font-family: "Roboto";
@@ -264,10 +316,25 @@ header .logo_header {
   font-size: 24px;
   line-height: 28px;
 }
+@media (min-width: 1024px) {
+  .restaurants .title {
+    padding-left: 180px;
+  }
+}
 .restaurants .cards {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+@media (min-width: 1024px) {
+  .restaurants .cards {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    row-gap: 40px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
 }
 .restaurants .cards .card {
   width: 100%;
@@ -343,7 +410,7 @@ header .logo_header {
   opacity: 1;
 }
 .restaurants .cards .card .card_details .heart .fa-solid {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

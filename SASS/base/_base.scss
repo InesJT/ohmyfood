@@ -15,6 +15,9 @@ body {
 main {
   @include flexCol;
   gap: 0px;
+  @media (min-width: 1024px) {
+    align-items: center;
+}
 }
 a {
   text-decoration: none;

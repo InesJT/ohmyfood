@@ -7,6 +7,10 @@ $delay-time: 0.5s;
   gap: 40px;
   padding: 15px;
   background-color: #f6f6f6;
+  @media (min-width: 1024px) {
+    width: 1050px;
+    padding: 30px 0px;
+  }
 
   .list_menu {
     @include flexCol;
@@ -43,6 +47,9 @@ $delay-time: 0.5s;
           height: 70px;
           overflow: hidden;
           margin: 15px 0;
+          @media (min-width: 1024px) {
+            width: 650px;
+          }
 
           &:hover > .checker {
             margin: 0px;
@@ -62,11 +69,24 @@ $delay-time: 0.5s;
             height: 100%;
             width: auto;
             flex: 1;
+            overflow: hidden;
+    
+            
 
             h3 {
               font-family: Roboto;
               font-size: 18px;
               font-weight: 700;
+              transition: 0.5s ease-in-out;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+            p {
+              transition: 0.5s ease-in-out;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
             }
           }
 
@@ -110,6 +130,9 @@ $delay-time: 0.5s;
         div:nth-child(3) {
           animation-delay: $delay-time * 3;
         }
+        div:nth-child(4) {
+          animation-delay: $delay-time * 4;
+        }
       }
 
       @keyframes fadeInUp {
@@ -135,7 +158,9 @@ $delay-time: 0.5s;
   padding-top: 30px;
   padding-bottom: 40px;
   background-color: #f6f6f6;
-
+  @media (min-width: 1024px) {
+    width: 1050px;
+  }
   .pink_button {
     @include button-style;
     text-align: center;

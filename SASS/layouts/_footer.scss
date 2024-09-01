@@ -39,3 +39,33 @@ footer {
     }
   }
 }
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    padding-right: 50px;
+    padding-top: 50px;
+
+  
+    
+    .footer_navs {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      
+      .footer_nav {
+        display: flex;
+        flex-direction: row;
+  
+       
+      }
+      .footer_contact {
+        display: flex;
+        flex-direction: row;
+  
+       
+      }
+    }
+  }
+}

@@ -21,6 +21,11 @@ main {
   gap: 25px;
   gap: 0px;
 }
+@media (min-width: 1024px) {
+  main {
+    align-items: center;
+  }
+}
 
 a {
   text-decoration: none;
@@ -86,6 +91,28 @@ footer .footer_navs .footer_contact a h5 {
   font-weight: 100;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+  footer .footer_navs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  footer .footer_navs .footer_nav {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer_navs .footer_contact {
+    display: flex;
+    flex-direction: row;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -138,6 +165,12 @@ header .logo_header {
   width: 100%;
   padding: 15px 0px;
 }
+@media (min-width: 1024px) {
+  .photo_rest .title_rest {
+    max-width: 1000px;
+    align-items: center;
+  }
+}
 .photo_rest .title_rest h1 {
   font-family: "Shrikhand";
   font-style: italic;
@@ -184,6 +217,12 @@ header .logo_header {
   padding: 15px;
   background-color: #f6f6f6;
 }
+@media (min-width: 1024px) {
+  .menu {
+    width: 1050px;
+    padding: 30px 0px;
+  }
+}
 .menu .list_menu {
   display: flex;
   flex-direction: column;
@@ -226,6 +265,11 @@ header .logo_header {
   overflow: hidden;
   margin: 15px 0;
 }
+@media (min-width: 1024px) {
+  .menu .list_menu .dish .animated-list .card_rest {
+    width: 650px;
+  }
+}
 .menu .list_menu .dish .animated-list .card_rest:hover > .checker {
   margin: 0px;
 }
@@ -242,11 +286,22 @@ header .logo_header {
   height: 100%;
   width: auto;
   flex: 1;
+  overflow: hidden;
 }
 .menu .list_menu .dish .animated-list .card_rest .card_rest_description h3 {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
+  transition: 0.5s ease-in-out;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu .list_menu .dish .animated-list .card_rest .card_rest_description p {
+  transition: 0.5s ease-in-out;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .list_menu .dish .animated-list .card_rest .card_rest_price {
   height: 100%;
@@ -283,6 +338,9 @@ header .logo_header {
 .menu .list_menu .dish .animated-list div:nth-child(3) {
   animation-delay: 1.5s;
 }
+.menu .list_menu .dish .animated-list div:nth-child(4) {
+  animation-delay: 2s;
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -300,6 +358,11 @@ header .logo_header {
   padding-top: 30px;
   padding-bottom: 40px;
   background-color: #f6f6f6;
+}
+@media (min-width: 1024px) {
+  .order {
+    width: 1050px;
+  }
 }
 .order .pink_button {
   border-radius: 25px;

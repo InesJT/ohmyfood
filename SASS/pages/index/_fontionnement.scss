@@ -3,13 +3,23 @@
   flex-direction: column;
   gap: 30px;
   @include square;
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+  
   .title {
     @include title;
+    @media (min-width: 1024px) {
+      padding-left: 180px;
+    }
   }
   .fonction_buttons {
     @include flexCol;
     align-items: center;
     justify-content: center;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+  }
     .button_fonction {
       display: flex;
       flex-direction: row;

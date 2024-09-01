@@ -4,12 +4,26 @@
   flex-direction: column;
   gap: 30px;
   @include square;
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
   .title {
     @include title;
+    @media (min-width: 1024px) {
+      padding-left: 180px;
+    }
   }
-
+ 
   .cards {
     @include flexCol;
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      gap: 10%;
+      row-gap: 40px;
+      padding-left: 180px;
+      padding-right: 180px;
+  }
 
     .card {
       width: 100%;
@@ -19,6 +33,7 @@
       border-radius: 15px;
       display: flex;
       flex-direction: column;
+     
 
       .card_img {
         width: 100%;
