@@ -41,6 +41,11 @@
 }
 @mixin square {
   padding: 40px 20px;
+  width: calc(100% - 40px);
+  @media (min-width: 1024px) {
+    padding: 40px 150px;
+    width: calc(100% - 150px);
+  }
 }
 @mixin button-style {
   border-radius: 25px;

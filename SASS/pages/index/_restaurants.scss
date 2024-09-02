@@ -5,24 +5,21 @@
   gap: 30px;
   @include square;
   @media (min-width: 1024px) {
-    width: 100%;
+    max-width: 1140px;
   }
   .title {
     @include title;
-    @media (min-width: 1024px) {
-      padding-left: 180px;
-    }
+    
   }
  
   .cards {
     @include flexCol;
     @media (min-width: 1024px) {
-      display: grid;
-      grid-template-columns: 45% 45%;
-      gap: 10%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: unset;
       row-gap: 40px;
-      padding-left: 180px;
-      padding-right: 180px;
+      justify-content: space-between;
   }
 
     .card {
@@ -33,7 +30,11 @@
       border-radius: 15px;
       display: flex;
       flex-direction: column;
-     
+
+      @media (min-width: 1024px) {
+        width: 48%;
+      }
+       
 
       .card_img {
         width: 100%;

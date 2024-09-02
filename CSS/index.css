@@ -180,6 +180,18 @@ header .logo_header {
   text-align: center;
   background-color: #f6f6f6;
   padding: 40px 20px;
+  width: calc(100% - 40px);
+}
+@media (min-width: 1024px) {
+  .main_location .description {
+    padding: 40px 150px;
+    width: calc(100% - 150px);
+  }
+}
+@media (min-width: 1024px) {
+  .main_location .description {
+    max-width: 1140px;
+  }
 }
 .main_location .description .title {
   font-family: "Roboto";
@@ -219,10 +231,17 @@ header .logo_header {
   flex-direction: column;
   gap: 30px;
   padding: 40px 20px;
+  width: calc(100% - 40px);
 }
 @media (min-width: 1024px) {
   .main_fonctionnement {
-    width: 100%;
+    padding: 40px 150px;
+    width: calc(100% - 150px);
+  }
+}
+@media (min-width: 1024px) {
+  .main_fonctionnement {
+    max-width: 1140px;
   }
 }
 .main_fonctionnement .title {
@@ -231,11 +250,6 @@ header .logo_header {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-}
-@media (min-width: 1024px) {
-  .main_fonctionnement .title {
-    padding-left: 180px;
-  }
 }
 .main_fonctionnement .fonction_buttons {
   display: flex;
@@ -247,6 +261,9 @@ header .logo_header {
 @media (min-width: 1024px) {
   .main_fonctionnement .fonction_buttons {
     flex-direction: row;
+    gap: unset;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 .main_fonctionnement .fonction_buttons .button_fonction {
@@ -303,10 +320,17 @@ header .logo_header {
   flex-direction: column;
   gap: 30px;
   padding: 40px 20px;
+  width: calc(100% - 40px);
 }
 @media (min-width: 1024px) {
   .restaurants {
-    width: 100%;
+    padding: 40px 150px;
+    width: calc(100% - 150px);
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    max-width: 1140px;
   }
 }
 .restaurants .title {
@@ -316,11 +340,6 @@ header .logo_header {
   font-size: 24px;
   line-height: 28px;
 }
-@media (min-width: 1024px) {
-  .restaurants .title {
-    padding-left: 180px;
-  }
-}
 .restaurants .cards {
   display: flex;
   flex-direction: column;
@@ -328,12 +347,11 @@ header .logo_header {
 }
 @media (min-width: 1024px) {
   .restaurants .cards {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    gap: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: unset;
     row-gap: 40px;
-    padding-left: 180px;
-    padding-right: 180px;
+    justify-content: space-between;
   }
 }
 .restaurants .cards .card {
@@ -344,6 +362,11 @@ header .logo_header {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .restaurants .cards .card {
+    width: 48%;
+  }
 }
 .restaurants .cards .card .card_img {
   width: 100%;

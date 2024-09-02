@@ -4,14 +4,12 @@
   gap: 30px;
   @include square;
   @media (min-width: 1024px) {
-    width: 100%;
+    max-width: 1140px;
   }
   
   .title {
     @include title;
-    @media (min-width: 1024px) {
-      padding-left: 180px;
-    }
+    
   }
   .fonction_buttons {
     @include flexCol;
@@ -19,6 +17,9 @@
     justify-content: center;
     @media (min-width: 1024px) {
       flex-direction: row;
+      gap: unset;
+      justify-content: space-between;
+      width: 100%;
   }
     .button_fonction {
       display: flex;

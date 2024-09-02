@@ -35,6 +35,9 @@
     text-align: center;
     background-color: #f6f6f6;
     @include square;
+    @media (min-width: 1024px) {
+      max-width: 1140px;
+    }
     .title {
       @include title;
     }
