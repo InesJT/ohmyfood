@@ -21,7 +21,7 @@ main {
   gap: 25px;
   gap: 0px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   main {
     align-items: center;
   }
@@ -91,7 +91,7 @@ footer .footer_navs .footer_contact a h5 {
   font-weight: 100;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -144,11 +144,7 @@ header .logo_header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media (min-width: 1024px) {
-  .main_location {
-    width: 100%;
-  }
+  width: 100%;
 }
 .main_location form {
   display: flex;
@@ -179,19 +175,7 @@ header .logo_header {
   align-items: center;
   text-align: center;
   background-color: #f6f6f6;
-  padding: 40px 20px;
-  width: calc(100% - 40px);
-}
-@media (min-width: 1024px) {
-  .main_location .description {
-    padding: 40px 150px;
-    width: calc(100% - 150px);
-  }
-}
-@media (min-width: 1024px) {
-  .main_location .description {
-    max-width: 1140px;
-  }
+  padding: 40px 0px;
 }
 .main_location .description .title {
   font-family: "Roboto";
@@ -230,19 +214,8 @@ header .logo_header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 40px 20px;
-  width: calc(100% - 40px);
-}
-@media (min-width: 1024px) {
-  .main_fonctionnement {
-    padding: 40px 150px;
-    width: calc(100% - 150px);
-  }
-}
-@media (min-width: 1024px) {
-  .main_fonctionnement {
-    max-width: 1140px;
-  }
+  width: 100%;
+  padding: 40px 0px;
 }
 .main_fonctionnement .title {
   font-family: "Roboto";
@@ -250,6 +223,12 @@ header .logo_header {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0px 40px;
+}
+@media screen and (min-width: 768px) {
+  .main_fonctionnement .title {
+    margin: 0px 150px;
+  }
 }
 .main_fonctionnement .fonction_buttons {
   display: flex;
@@ -257,13 +236,18 @@ header .logo_header {
   gap: 25px;
   align-items: center;
   justify-content: center;
+  margin: 0px 40px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .main_fonctionnement .fonction_buttons {
+    margin: 0px 150px;
+  }
+}
+@media screen and (min-width: 768px) {
   .main_fonctionnement .fonction_buttons {
     flex-direction: row;
     gap: unset;
     justify-content: space-between;
-    width: 100%;
   }
 }
 .main_fonctionnement .fonction_buttons .button_fonction {
@@ -272,6 +256,15 @@ header .logo_header {
   align-items: center;
   position: relative;
   justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main_fonctionnement .fonction_buttons .button_fonction {
+    flex-direction: row;
+    gap: unset;
+    justify-content: space-between;
+    width: 30%;
+  }
 }
 .main_fonctionnement .fonction_buttons .button_fonction .num_cercle {
   width: 24px;
@@ -293,10 +286,10 @@ header .logo_header {
   align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  width: 240px;
+  width: calc(100% - 30px);
   height: 70px;
   background: #f7f7f7;
-  padding: 0px 40px;
+  padding-left: 30px;
 }
 .main_fonctionnement .fonction_buttons .button_fonction .button .icon {
   color: #9356dc;
@@ -319,19 +312,8 @@ header .logo_header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 40px 20px;
-  width: calc(100% - 40px);
-}
-@media (min-width: 1024px) {
-  .restaurants {
-    padding: 40px 150px;
-    width: calc(100% - 150px);
-  }
-}
-@media (min-width: 1024px) {
-  .restaurants {
-    max-width: 1140px;
-  }
+  width: 100%;
+  padding: 40px 0px;
 }
 .restaurants .title {
   font-family: "Roboto";
@@ -339,13 +321,25 @@ header .logo_header {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0px 40px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants .title {
+    margin: 0px 150px;
+  }
 }
 .restaurants .cards {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  margin: 0px 40px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .restaurants .cards {
+    margin: 0px 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .restaurants .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -363,7 +357,7 @@ header .logo_header {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .restaurants .cards .card {
     width: 48%;
   }

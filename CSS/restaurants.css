@@ -21,7 +21,7 @@ main {
   gap: 25px;
   gap: 0px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   main {
     align-items: center;
   }
@@ -91,7 +91,7 @@ footer .footer_navs .footer_contact a h5 {
   font-weight: 100;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -168,7 +168,7 @@ header .logo_header {
   width: 100%;
   padding: 15px 0px;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .photo_rest .title_rest {
     max-width: 1050px;
     width: 100%;
@@ -221,7 +221,7 @@ header .logo_header {
   padding: 15px;
   background-color: #f6f6f6;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu {
     max-width: 1050px;
     width: 100%;
@@ -249,7 +249,7 @@ header .logo_header {
   gap: 5px;
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu .list_menu .dish .dish_title {
     max-width: 650px;
   }
@@ -288,7 +288,7 @@ header .logo_header {
   overflow: hidden;
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu .list_menu .dish .animated-list .card_rest {
     max-width: 650px;
   }
@@ -384,7 +384,7 @@ header .logo_header {
   padding-bottom: 40px;
   background-color: #f6f6f6;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .order {
     max-width: 1050px;
     width: 100%;

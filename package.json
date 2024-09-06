@@ -4,8 +4,8 @@
   "description": "Oh my food project",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./SASS/_index.scss:./CSS/index.css ./SASS/_restaurants.scss:./CSS/restaurants.css",
-    "sass-atr": "sass --watch ./SASS:./CSS"
+     "sass": "sass --watch ./SASS/index.scss:./CSS/index.css ./SASS/restaurants.scss:./CSS/restaurants.css"
+    
   },
   "repository": {
     "type": "git",
