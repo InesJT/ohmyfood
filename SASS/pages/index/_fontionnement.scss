@@ -58,14 +58,16 @@
         height: 70px;
         background: #f7f7f7;
         padding-left: 30px;
-        .icon {
+        .icon_1 {
           color: $primary;
-          width: 20px;
-          height: 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include icon;
         }
+        .icon {
+          color: #7E7E7E;
+         @include icon;
+        }
+
+        
 
         h3 {
           font-family: "Roboto";

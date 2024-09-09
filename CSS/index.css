@@ -291,8 +291,16 @@ header .logo_header {
   background: #f7f7f7;
   padding-left: 30px;
 }
-.main_fonctionnement .fonction_buttons .button_fonction .button .icon {
+.main_fonctionnement .fonction_buttons .button_fonction .button .icon_1 {
   color: #9356dc;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_fonctionnement .fonction_buttons .button_fonction .button .icon {
+  color: #7E7E7E;
   width: 20px;
   height: 20px;
   display: flex;
